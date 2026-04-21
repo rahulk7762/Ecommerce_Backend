@@ -7,92 +7,91 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="products")
+@Table(name="product")
 public class Product {
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int product_id;
-	private String product_name;
-	private double product_prize;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int productId;
+	private String productName;
+	private double productPrize;
 	private boolean stock;
-	private int product_quantity;
+	private int productQuantity;
 	private boolean live;
-	private String product_imageName;
-	private String product_desc;
+	private String productImageName;
+	private String productDesc;
 	
 	public Product() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
-	
-	public Product(int product_id, String product_name, double product_prize, boolean stock, int product_quantity,
-			boolean live, String product_imageName, String product_desc) {
-		super();
-		this.product_id = product_id;
-		this.product_name = product_name;
-		this.product_prize = product_prize;
-		this.stock = stock;
-		this.product_quantity = product_quantity;
-		this.live = live;
-		this.product_imageName = product_imageName;
-		this.product_desc = product_desc;
+
+	public int getProductId() {
+		return productId;
 	}
 
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
 
+	public String getProductName() {
+		return productName;
+	}
 
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
 
-	public int getProduct_id() {
-		return product_id;
+	public double getProductPrize() {
+		return productPrize;
 	}
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
+
+	public void setProductPrize(double productPrize) {
+		this.productPrize = productPrize;
 	}
-	public String getProduct_name() {
-		return product_name;
-	}
-	public void setProduct_name(String product_name) {
-		this.product_name = product_name;
-	}
-	public double getProduct_prize() {
-		return product_prize;
-	}
-	public void setProduct_prize(double product_prize) {
-		this.product_prize = product_prize;
-	}
+
 	public boolean isStock() {
 		return stock;
 	}
+
 	public void setStock(boolean stock) {
 		this.stock = stock;
 	}
-	public int getProduct_quantity() {
-		return product_quantity;
+
+	public int getProductQuantity() {
+		return productQuantity;
 	}
-	public void setProduct_quantity(int product_quantity) {
-		this.product_quantity = product_quantity;
+
+	public void setProductQuantity(int productQuantity) {
+		this.productQuantity = productQuantity;
 	}
+
 	public boolean isLive() {
 		return live;
 	}
+
 	public void setLive(boolean live) {
 		this.live = live;
 	}
-	public String getProduct_imageName() {
-		return product_imageName;
+
+	public String getProductImageName() {
+		return productImageName;
 	}
-	public void setProduct_imageName(String product_imageName) {
-		this.product_imageName = product_imageName;
+
+	public void setProductImageName(String productImageName) {
+		this.productImageName = productImageName;
 	}
-	public String getProduct_desc() {
-		return product_desc;
+
+	public String getProductDesc() {
+		return productDesc;
 	}
-	public void setProduct_desc(String product_desc) {
-		this.product_desc = product_desc;
+
+	public void setProductDesc(String productDesc) {
+		this.productDesc = productDesc;
 	}
+	
+	
+	
 	
 	
 	
