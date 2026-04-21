@@ -45,4 +45,5 @@ Open in IDE (Eclipse / IntelliJ)
 Configure MySQL in application.properties
 
 Run the project
+
 mvn spring-boot:run
